@@ -1,0 +1,222 @@
+*
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+
+}
+.container
+{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height:13vh;
+}
+.container img
+{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform:  translate(-50%,-50%);
+   max-width: 300px;
+
+}
+.container .nav
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    background: #fff;
+
+}
+.container .nav span
+{
+   position: relative;
+   width: 20px;
+   height: 20px;
+   margin: 10px 5px;
+   background: #f00;
+   border-radius: 50%;
+   cursor: pointer;
+   z-index: 2;
+
+}
+.container .nav span.active
+{
+   border: 2px solid #000;
+   transform:  scale(1.2);
+}
+.container .nav span.one,
+.container .nav i.one{    
+      background: #28e651;
+}
+.container .nav span.two,
+.container .nav i.two
+{
+    background: #ff226d;
+
+}
+.container .nav span.three,
+.container .nav i.three
+{
+    background:#d52af3;
+
+}
+.container .nav span.four,
+.container .nav i.four
+{
+    background:#2196f3;
+   
+
+}
+.container .nav span.active + i
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   mix-blend-mode: hue;
+
+}
+p
+{
+    
+    width: 38em;
+
+}
+.informacoes
+{
+
+    padding-top: 315px;
+    color: white;
+    font-style: italic;
+
+
+
+}
+.estoque
+{
+    float: right;
+    padding-top: 163px;
+    margin-right: 61px;
+    color: white;
+    font-style: italic;
+    
+}
+.nome-produto
+{
+   color: #ffffff;
+   font-size: 20px;
+     
+}
+.linha-vertical
+{ 
+    height: 527px;
+    border-right: 1px solid #37a09c;
+    float: left;
+    padding-right: 242px;
+    margin: -12
+}
+.borda
+{  
+    border-right: 1px solid #fdfdfd;
+    
+
+}
+
+@media only screen and (max-width: 1655px){
+    .container img
+    {
+        position: absolute;
+        top: 32%;
+        left: 61%;
+        transform: translate(-50%,-50%);
+        max-width: 272px;
+    }
+    .informacoes
+{
+
+    color: #ffffff;
+    font-style: italic;
+    margin-left: 39%;
+    font-size: 15px;
+    margin-top: 14px;
+    position: absolute;
+
+
+
+}
+.estoque  /*preços*/
+{
+    margin: 0px 0px -278px 0px;
+    margin-right: auto;
+    margin-left: 13px;
+    color: white;
+    font-style: italic;
+    float: none;
+    
+}
+}
+
+@media only screen and (max-width: 860px){
+    .container img
+    {
+        position: absolute;
+        top: 21%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        max-width: 201px;
+    
+    }
+    .informacoes
+{
+
+    padding-top: 0px;
+    color: #ffffff;
+    font-style: unset;
+    font-size: 14px;
+    margin-left: 119px;
+
+
+
+}
+.estoque
+{
+    padding-top: 364px;
+    margin: 0 157px;
+    color: white;
+    font-style: italic;
+    
+}
+}
+
+@media only screen and (max-width: 600px){
+    .container img
+{
+        position: absolute;
+        top: 21%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        max-width: 201px;
+}
+    .informacoes
+{
+
+    color: #ffffff;
+    font-style: unset;
+    font-size: 12px;
+    margin-left: 16px;
+}
+.estoque
+{
+    padding-top: 364px;
+    margin: 0 57px;
+    color: white;
+    font-style: italic;
+    
+}
+}

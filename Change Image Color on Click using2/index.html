@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="borda">
+    <div class="estoque">
+      <a href="#" class="nome-produto">Relógio Digital Led Masculino E Feminino </a>  <br> <br>
+            <div id="linha-vertical">  </div>
+            <div id="linha-horizontal">  </div>
+    
+        
+        <div class="coluna-preço"  class="preco-produto">
+        Promoção R$ 29,90
+        </div>  <br>
+          <span class="desconto-a-vista"> 
+          <div class="cor-principal titulo"> em até 12x sem juros no <strong>cartão de credido</strong></div>
+            </span> <br>
+             
+                
+                 <td class="numero-quantidade" class="coluna-pequena">
+                   Quantidade :
+                   <input type="number" value="1" min="0" max="5" class="quantidade">
+
+
+                 </td> </br> </br>
+                 <label class="embalar"><input type="checkbox">Embalar para presente</label></br> </br>
+                 <label class="embalar"><input type="checkbox">Adicionar ao Carrinho</label>
+                    <br> </br>
+                    <a href="#" style="color: white;"  class="remover-carrinho">Tirar do carrinho</a><br><br>   
+
+                 <p >Lorem ipsum dolor sit amet consectetur adipiscing,<br> elit est integer leo vehicula. Risus massa velit 
+                    inceptos sapien <br> mollis elit molestie litora, natoque lacinia  in felis aptent bibendum <br>luctus etiam, duis
+                     curabitur tempor id fusce rhoncus pretium.<br> Lobortis dapibus ligula tempor feugiat nec porttitor ac eu, blandit
+                     .</p>
+             </div>
+         </div>
+         
+   <div class="informacoes"> <h2>Relogio Digital </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit est integer leo vehicula. Risus massa velit 
+        inceptos sapien mollis elit molestie litora, natoque lacinia in felis aptent bibendum luctus etiam, duis
+         curabitur tempor id fusce rhoncus pretium. Lobortis dapibus ligula tempor feugiat nec porttitor ac eu, blandit 
+         quis laoreet congue integer gravida duis, hendrerit mus justo ultrices dictum senectus imperdiet. Rhoncus euismod 
+         pellentesque nascetur primis vestibulum nec nostra commodo vel, maximus ex semper mollis lectus quam netus senectus 
+         mauris sem, risus ultricies efficitur montes id lacus nam potenti. Hendrerit odio neque sed vivamus sodales, placerat
+          vulputate inceptos suscipit sit per, nascetur dictum penatibus libero. Laoreet eleifend aptent odio quisque nec
+           vestibulum ut mi, senectus quam ridiculus nunc ultrices dictumst dapibus velit suspendisse, convallis sociosqu magnis
+            sollicitudin cursus efficitur sed. Lorem ipsum habitant rutrum ex urna pharetra ridiculus libero</p>
+        </div>
+
+   
+ 
+    <div class="container">
+        <div class="nav">
+            <span class="one active" onclick="changeColor(event)"></span>
+             <i class="one"></i>
+             <span class="two " onclick="changeColor(event)"></span>
+             <i class="two"></i>
+             <span class="three" onclick="changeColor(event)"></span>
+             <i class="three"></i>
+             <span class="four" onclick="changeColor(event)"></span>
+             <i class="four"></i>
+            <img src="watches_PNG9907.png">
+        
+        
+        </div> 
+    </div>
+  
+
+    <script>
+     function changeColor(event){
+          
+    // reset and remove active class first
+   document.querySelectorAll('span.active').forEach(function(item)
+     {
+   item.classList.remove('active')
+
+     })
+
+     //add active class to selected menu item 
+ event.target.classList.add('active')
+    }
+    </script>
+     
+</body>
+</html>
